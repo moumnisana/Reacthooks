@@ -1,16 +1,4 @@
-header{
-  font-size: 1.2em;
-  width: 100%;
-  top: 0;
-  height: 80px;
-  background-color: white;
-  position: fixed;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 2;
-}
+
 .movieList{
   margin-left: auto;
   
@@ -24,18 +12,8 @@ header{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 2px;
 }
-.title { 
-  color: Black; 
-  font-family: "Great Vibes", cursive; 
-  font-size: 50px; 
-  font-weight: bold; 
-  margin: 10px; 
-  text-shadow: 0 1px 1px rgb(255, 255, 255); 
-}
 
-.stars{
-  margin-right: 200px;
-}
+
 
 .App {
   text-align: center;

@@ -1,6 +1,6 @@
-import React ,{useState} from 'react'
-import {Modal,Button} from 'react-bootstrap'
-
+import React ,{useState} from 'react';
+import {Modal,Button} from 'react-bootstrap';
+/*import 'bootstrap/dist/css/bootstrap.min.css';*/
 
 function AddMovie({add}) {
     const [show, setShow] = useState(false);
@@ -8,11 +8,12 @@ function AddMovie({add}) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const handleChange = (e) =>{
-        setaddMovie({...addMovie,[e.target.name]:e.target.value})
+        setaddMovie({...addMovie,[e.target.name]:e.target.value});
+        
     }
   
     return (
-      <>
+      <div>
         <Button variant="primary" onClick={handleShow}>
         Add a movie to the list
         </Button>
@@ -31,12 +32,12 @@ function AddMovie({add}) {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={()=>add(addMovie)}>
+            <Button variant="primary" type="submit"onClick={()=>{add(addMovie);handleClose()}}>
               Add
             </Button>
           </Modal.Footer>
         </Modal>
-      </>
+      </div>
     );
   }
 
